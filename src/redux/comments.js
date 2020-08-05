@@ -1,4 +1,3 @@
-import { COMMENTS } from '../shared/comments';
 import * as ActionTypes from './ActionTypes';
 
 export const Comments = (state = {
@@ -14,8 +13,8 @@ export const Comments = (state = {
 
         case ActionTypes.ADD_COMMENT:
             var comment = action.payload;
-            comment.id = state.comments.length;
-            comment.date = new Date().toISOString();
+            // comment.id = state.comments.length;
+            // comment.date = new Date().toISOString();
             console.log("Comment: ", comment);
             //concat pushes a new element on the state arrray but insted of modifying the state it creats new object
             //creats a new value
